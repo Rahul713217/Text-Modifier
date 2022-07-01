@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index_HTML</title>
+</head>
+<body style="text-align: center;">
+    <h1><b><i>Welcome To The Text Analyzer</i></b></h1><br><br>
+    <h3>You Can Modify Your Text Here</h3><br>
+
+    <form action="analyze/" method="post">{% csrf_token %}
+        <textarea name="text" style="width: 437px; height: 229px;" placeholder="Enter Your Text Here"></textarea>
+        <br/>
+
+        <input type="checkbox" name="removepunc">Remove Punctuations <br/><br/>
+        <input type="checkbox" name="uppercase">UPPERCASE<br/><br/>
+        <input type="checkbox" name="removenewlines">Remove New Lines<br/><br/>
+        <input type="checkbox" name="extraspaceremover">Remove Extra Spaces<br/><br/>
+        {% comment %} <input type="checkbox" name="countchar">Count No. Of Characters(excluding spaces)<br/><br/> {% endcomment %}
+        <button type="submit">Analyze Text</button>
+    </form>
+
+</body>
+</html>
+

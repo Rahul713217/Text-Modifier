@@ -1,0 +1,13 @@
+
+
+sqlite3'. The file is database file where all the data that you will be generating will be stored. It is a local file as Django is a server-side framework and it treats your computer as the host when you actually run the server in command line/terminal.
+
+
+Why SQLite is used in Django?
+
+SQLite is an open-source database that helps to interact with relational databases. SQLite is stored as a single file. This makes sharing databases easier. By default, Django uses the SQLite database.
+
+
+
+
+Open Source Softwares (OSS) - code that is designed to be publicly accessible — anyone can see, modify, and distribute the code as they see fit.
