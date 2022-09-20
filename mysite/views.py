@@ -62,7 +62,7 @@ def analyze(request):
     if extraspaceremover == 'on':
         analyzed = ''
         for i,e in enumerate(djtext):                  
-            if not (djtext[i] == ' ' and djtext[i+1] == ' '):
+            if not (djtext[i] == ' ' and djtext[i-1] == ' '):
                 analyzed += e
         param = {'analyzed_text': analyzed }
         djtext = analyzed

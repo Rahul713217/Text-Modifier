@@ -10,6 +10,7 @@
     <h1><b><i>Welcome To The Text Analyzer</i></b></h1><br><br>
     <h3>You Can Modify Your Text Here</h3><br>
 
+    {% comment %} Cross-Site Request Forgery (CSRF) {% endcomment %}
     <form action="analyze/" method="post">{% csrf_token %}
         <textarea name="text" style="width: 437px; height: 229px;" placeholder="Enter Your Text Here"></textarea>
         <br/>
